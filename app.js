@@ -49,7 +49,7 @@ function pauseTimer() {
     clearInterval(titleInterval);
     isRunning = false;
     document.title = "Timer Paused";
-    document.getElementById('favicon').href = "/Images/24.png";
+    document.getElementById('favicon').href = "/Images/QT.png";
 
     var playBtn = document.getElementById("play");
     var pauseBtn = document.getElementById("pause");
@@ -83,7 +83,7 @@ function stopTimer() {
     if (confirmed) {
         addToProjectTable(serialNumber, projectName, projectDetails, `${hours}:${minutes}`);
         serialNumber++;
-        document.getElementById('favicon').href = "/Images/24.png";
+        document.getElementById('favicon').href = "/Images/QT.png";
     } else {
         startTimer(); // Resume timer
         document.getElementById('favicon').href = "/Images/stop.png";
