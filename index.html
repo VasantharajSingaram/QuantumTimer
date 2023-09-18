@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link id="favicon" rel="icon" href="/Images/QT.png" type="image/png">
+
+  <title>QT</title>
+
+</head>
+
+<body onLoad="initClock()">
+
+  <div class="container sec1">
+    <div class="forLoader mt-3 mb-3">
+    <div class="loader"></div>
+    <div class="containes">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+    <div class="theTitle">
+    <h1 class="mt-2">QUANTUM TIMER</h1>
+
+  </div>
+
+    <div class="timer" id="timer">00:00:00</div>
+    <div class="microseconds mb-3" id="microseconds">00</div>
+
+    <button class="btnCss1" onclick="startTimer()"><i id="play" class="fa-solid fa-play animation"></i> Start</button>
+    <button class="btnCss2" onclick="pauseTimer()"><i id="pause" class="fa-solid fa-pause "></i> Pause</button>  
+    <button class="btnCss3" onclick="stopTimer()"><i id="stop" class="fa-solid fa-stop"></i> Stop</button>
+  </div>
+  <br><br>
+  <div class="container">
+
+    <form>
+      <div class="mb-3">
+        <label for="projectName" class="form-label">Project Name:</label>
+        <input type="text" class="form-control" id="projectName" aria-describedby="projectName">
+      </div>
+      <div class="mb-3">
+        <label for="projectDetails" class="form-label">Project Details:</label>
+        <input type="text" class="form-control" id="projectDetails">
+      </div>
+    </form>
+
+  </div>
+  <div class="container">
+    <h5 class="">Project Data</h5>
+    <div class="theTable">
+     
+  <table class="table table-sm table-striped table-bordered border-dark table-dark">
+    <thead class="table-dark" scope="col">
+      <tr>
+        <th>Serial Number</th>
+        <th>Project Name</th>
+        <th>Project Details</th>
+        <th>Time Consumed</th>
+      </tr>
+    </thead>
+    <tbody id="projectTableBody"></tbody>
+  </table>
+</div>
+<div class="downBtn">
+  <button class="btn btn-primary mt-3 btn-sm download" onclick="downloadTableData()">Download Table Data</button>
+
+</div>
+  
+
+</div>
+<footer>
+  <div class="caution">
+    <p>✫ Refreshing is not recommended. I cannot afford Database because I do not have the money to do so ✫</p>
+  </div>
+</footer>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
