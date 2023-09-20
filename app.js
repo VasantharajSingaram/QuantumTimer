@@ -85,7 +85,7 @@ function stopTimer() {
         serialNumber++;
         document.getElementById('favicon').href = "/Images/QT.png";
     } else {
-        startTimer(); // Resume timer
+        startTimer(); 
         document.getElementById('favicon').href = "/Images/stop.png";
     }
 
